@@ -585,7 +585,7 @@ def worker_thread(job_id, input_text, quark_cookie, baidu_cookie, bark_key, push
                         t_root = time.time()
                         root_fid = await q_engine.get_folder_id(QUARK_SAVE_PATH)
                         if not root_fid: 
-                            job_manager.add_log(job_id, f"目录不存在，尝试创建 (耗时: {get_time_diff(t_root)})", "error")
+                            job_manager.add_log(job_id, f"目录不存在，手动在夸克网盘中创建 来自：分享/LinkChanger文件夹 (耗时: {get_time_diff(t_root)})", "error")
                         else:
                             for match in q_matches:
                                 current_idx += 1
