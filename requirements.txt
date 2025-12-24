@@ -1,4 +1,5 @@
 streamlit
+httpx>=0.24.0
+httpcore
 requests
 retrying
-httpx
